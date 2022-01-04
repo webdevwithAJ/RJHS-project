@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJHS Public School, Varanasi</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Oxygen&display=swap" rel="stylesheet">
+<style>
+
+    body{
+        margin:0;
+        background-color: rgb(255, 255, 255);
+    }
+
+    header{
+        background-color: rgb(63 71 92);
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+    .heading{
+        display: inline-flex;
+        height: 50px;
+    }
+
+    .heading #logo img{
+
+        padding-top: 7px;
+        padding-right: 10px;
+        padding-left: 22px;
+        width: 76px;
+        height: 70px;
+    }
+
+    .heading #name img{
+        padding-top: 7px;
+        padding-right: 38px;
+        padding-left: 0px;
+        width: 225px;
+        height: 70px;
+    }
+
+    .navbar{
+        background-color: rgb(63 71 92);
+        display: inline-flex;
+    }
+    .navbar li{
+        list-style: none;
+        margin: 13px 0px;
+        float: left;
+    }
+    .navbar li ::after{
+        content: '';
+        width: 100%;
+        height: 2px;
+        background:  red;
+        display: inline-flex;
+        transform: scale(0,1);
+        transition: 1s;
+    }
+    .navbar li:hover ::after{
+        transform: scale(1,1);
+    }
+    .navbar li{
+        list-style: none;
+        margin: 13px 0px;
+        float: left;
+    }
+    .navbar li a {
+        padding: 3px 45px;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+    .navbar li a:hover{
+        color: red;
+    }
+    .navbar li a:active{
+        color: red;
+    }
+    .search{
+        float: right;
+        color: white;
+        margin-left: 170px;
+        margin-top: 10px;
+        }
+    .navbar input{
+        /* border:2px solid black; */
+        border-radius: 13px;
+        padding: 3px 17px;
+    }
+
+    .slidebody{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    body::before{
+            background:url('Pics/Bg.jpg') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;    
+            z-index: -1;
+            top: 0;
+            left: 0;
+            opacity: 0.7;
+            margin-top: 80px;
+        }
+
+
+    .slider{
+        height: 550px;
+        width: 840px;
+        border-radius: 20px;
+        overflow:hidden;
+        margin-top: -24px;
+        margin-left: 630px;
+    }
+
+    .slide{
+        position: relative;
+        width: 1100%;
+        animation: 20s slider infinite;   
+    }
+
+    .slide img{
+        width: 20%;
+        float: left;
+        height: 5%;
+    }
+
+    @keyframes slider{
+        0%{
+            left: 0%;
+        }
+
+        5%{
+            left: 0%;
+        }
+        10%{
+            left:-100%;
+        }
+        15%{
+            left: -100%;
+        }
+        20%{
+            left: -200%;
+        }
+        25%{
+            left: -200%;
+        }
+        30%{
+            left: -300%;
+        }
+        35%{
+            left: -300%;
+        }
+        40%{
+            left: -400%;
+        }
+        45%{
+            left: -400%;
+        }
+        50%{
+            left: -500%;
+        }
+        55%{
+            left: -500%;
+        }
+        60%{
+            left: -600%;
+        }
+        65%{
+            left: -600%;
+        }
+        70%{
+            left: -700%;
+        }
+        75%{
+            left: -700%;
+        }
+        80%{
+            left: -800%;
+        }
+        85%{
+            left: -800%;
+        }
+        90%{
+            left: -900%;
+        }
+        95%{
+            left: -900%;
+        }
+        100%{
+            left: -1000%;
+        }
+    }
+
+    #img1{
+        height: 550px;
+        width:  840px
+    }
+
+    .container{
+        background:url('Pics/Bg2.jpg') no-repeat center center/cover;
+        position: absolute;
+        width: 100%;
+        height: 230%;    
+        opacity: 0.5;
+        z-index: -1;
+        /* margin-top: 600px; */
+    }
+
+    .content1{
+        display: inline-flex;
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+    
+    .aboutus{
+        background-color:burlywood;
+        border-radius: 20px;
+        margin-top: 70px;
+        margin-bottom: 250px;
+        margin-left: 170px;
+        padding: 50px 50px;
+    }
+    .aboutus p{
+        font-family: 'Oxygen', sans-serif;
+        font-size:20px;
+    }
+    
+    .aboutus h2{
+        font-family: 'Heebo', sans-serif;
+        font-size:33px;
+    }
+    .aboutus h3{
+        font-family: 'Heebo', sans-serif;
+        font-size:23px;
+    }
+    
+    #motovision{
+        display: inline-block;
+        justify-content: space-between;
+        
+    }
+    
+    .row{
+        background-color: cornflowerblue;
+        border-radius: 90px 10px;
+        width: 35%;
+        text-align: center;
+        color: black;
+        margin-top: 35px;
+        margin-left: 230px;
+        margin-right: 90px;
+        padding: 46px 70px;
+    }
+
+    .row h1{
+        font-weight: bolder;
+        font-size: 32px;
+        font-family: 'Heebo', sans-serif;
+    }
+    .row p{
+        font-weight: bolder;
+        font-size: 20px;
+        font-family: 'Oxygen', sans-serif;
+    }
+    
+    #moto:hover{
+        transition: 1.5s;
+        box-shadow:
+                0px 0px 4px rgba(236, 157, 230, 0.062),
+                0px 0px 9.6px rgba(0, 0, 0, 0.089),
+                0px 0px 18.2px rgba(0, 0, 0, 0.11),
+                0px 0px 32.4px rgba(0, 0, 0, 0.131),
+                0px 0px 60.6px rgba(0, 0, 0, 0.158),
+                0px 0px 145px rgba(0, 0, 0, 0.22)
+            ;
+
+    }
+    #vision:hover{
+        transition: 1.5s;
+        box-shadow:
+                0px 0px 4px rgba(0, 0, 0, 0.062),
+                0px 0px 9.6px rgba(0, 0, 0, 0.089),
+                0px 0px 18.2px rgba(0, 0, 0, 0.11),
+                0px 0px 32.4px rgba(0, 0, 0, 0.131),
+                0px 0px 60.6px rgba(0, 0, 0, 0.158),
+                0px 0px 145px rgba(0, 0, 0, 0.22)
+            ;
+
+
+    }
+
+    #campus{
+        border: 3px solid black;
+        border-radius: 10px;
+        margin-top: 5%;
+        margin-left: 100px;
+        margin-right: 445px;
+        margin-top: -162px;
+        margin-bottom: 90px;
+        background-color: burlywood;
+        padding: 0px 0px;
+    }
+
+    #campus h1{
+        text-align: center;
+    }
+
+    .camimg{
+        padding-bottom: 60px;
+    }
+
+    #img2{
+        height: 260px;
+        width: 448px;
+        border-radius: 10px;
+    }
+
+    .leftimg{
+        margin-left: 35px;
+        margin-right: 0px;
+    }
+    .rightimg{
+        margin-right: 20px;
+        margin-left: 0px;
+    }
+
+    #footer{
+        background-color: rgb(63 71 92);
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: -150px;
+    }
+
+    .heading2{
+        border-bottom:3px solid whitesmoke ;
+        margin-bottom: 20px;
+        margin-left: 215px ;
+        display: inline-flex;
+    }
+
+    .heading2 h3{
+        color:whitesmoke;
+        margin-bottom: 0px;
+        font-family: 'Heebo', sans-serif;
+        font-size: 40px;
+
+    }
+
+    .our h3{
+        font-weight: lighter;
+    }
+
+    .loc h3{
+        font-weight: bolder;
+        margin-left: 8px;
+    }
+
+    .location{
+        margin-left: 180px;
+        padding-bottom: 50px ;
+    }
+
+</style>
+<body>
+
+    <header>
+        <div class="heading">
+            <div id="logo">
+                <img src="logo1.jpg" alt="logo">
+            </div>
+            <div id="name">
+                <img src="logo 2.1.png" alt="logo">   
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">About Us</a></li>
+                    <li> <a href="#">Service</a></li>
+                    <li> <a href="#">Updates</a></li>
+                    <li> <a href="#">Contacts</a></li>
+                    <div class="search">
+                        <input type="text" name="search" id="search" placeholder="Search">
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="slidebody">
+        <div class="slider">
+            <div class="slide">
+                <img src="Pics\Promo.jpg" alt="" id="img1">
+                <img src="Pics\promo1.jpg" alt="" id="img1">
+                <img src="Pics\promo2.jpg" alt="" id="img1">
+                <img src="Pics\promo3.jpg" alt="" id="img1">
+                <img src="Pics\promo4.jpg" alt="" id="img1">
+                <img src="Pics\promo5.jpg" alt="" id="img1">
+                <img src="Pics\promo6.jpg" alt="" id="img1">
+                <img src="Pics\promo7.jpg" alt="" id="img1">
+                <img src="Pics\promo8.jpg" alt="" id="img1">
+                <img src="Pics\promo9.jpg" alt="" id="img1">
+                <img src="Pics\Promo.jpg" alt="" id="img1">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+
+    </div>
+        <div class="content1">
+            
+            <section class="aboutus">
+                <h2><u>ABOUT US</u></h2>
+                <h3>IN PURSUIT OF EXCELLENCE WITH THE MOTTO “DUTY FIRST”</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, soluta. Numquam tempore commodi pariatur facere ipsum, vitae voluptas aperiam delectus inventore. Non officiis accusantium aliquid, autem, labore reiciendis ab impedit, fuga inventore porro voluptate maiores quaerat facere sint animi veniam est assumenda! Laudantium temporibus error debitis, quod libero provident harum!</p>
+            </section>
+
+            <section id="motovision">
+                <div id="moto" class= "row">
+                    <h1><u> RJHS MOTTO </u></h1>
+                    <p> Every Child is a Leader they just need Wings to Fly </p>
+                </div>
+                
+                <div id="vision" class= "row">
+                    <h1><u> RJHS VISION</u></h1>
+                    <p> To make Every Child A Self Motivated Agent of Social Transformation </p>
+                </div>
+            </section>
+            
+        </div>
+        
+        <section id="campus">
+            <h1><u>Our Campus</u></h1>
+            <div class="camimg">
+                <img src="Pics\campus9.jpg" alt="" id="img2"  class="leftimg">
+                <img src="Pics\campus8.jpg" alt="" id="img2" class="rightimg">
+                <img src="Pics\campus6.jpg" alt="" id="img2" class="leftimg">
+                <img src="Pics\campus5.jpg" alt="" id="img2" class="rightimg">
+                <img src="Pics\campus4.jpg" alt="" id="img2" class="leftimg">
+                <img src="Pics\campus3.jpg" alt="" id="img2" class="rightimg">
+            </div>
+        </section>
+    
+    <footer id="footer">
+        <div class= "footer">
+            <section class="left">
+                <div class="heading2">
+                    <div class="our">
+                        <h3>Our</h3>
+                    </div>
+                    <div class="loc">
+                        <h3>Location</h3>
+                    </div>
+                </div>
+
+                <div class="location">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14427.296896877117!2d82.9801191!3d25.3101091!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x44efa04f8afc73b5!2sRJHS%20PUBLIC%20SCHOOL!5e0!3m2!1sen!2sin!4v1634475762252!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </section>
+
+            <section class="right">
+                <div class="heading2">
+                    <h2></h2>
+                    <div class="loc">
+                        <h2></h2>
+                    </div>
+                <div class="contactinfo">
+
+                </div>
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
